@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: #DDD url('/images/bg.png');
   font-size: .875em;
-  font-family: HelveticaNeue, helvetica, arial, sans-serif;
+  font-family: HelveticaNeue, arial, sans-serif;
   line-height: 1.5em;
   text-align: center;
   color: #DDD;
@@ -87,7 +87,7 @@ hr {
   clear: both;
 }
 
-h1, h2, h3 {font-family: HelveticaNeue, helvetica, arial, sans-serif;}
+h1, h2, h3 {font-family: HelveticaNeue, arial, sans-serif;}
 
 #frame h1 {
   padding: 0;
