@@ -1,12 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  background: #DDD url('/images/bg.png');
+  background: #f7f7fa;
   font-size: .875em;
   font-family: HelveticaNeue, arial, sans-serif;
   line-height: 1.5em;
   text-align: center;
-  color: #DDD;
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
 }		
 
 strong {
@@ -112,7 +113,6 @@ img.header_image {
 #frame h1 a {
   color: #444;
   text-decoration: none;
-  text-shadow: 0 1px 1px #FFF;
   font-weight: 700;
 }
 
@@ -129,7 +129,6 @@ h2 {
   padding: 0; 
   margin: 0.9523em 0 0.4476em; 
   font-weight: 400;
-  text-shadow: 0 1px 1px #FFF;
 }
 
 h3 {
@@ -201,7 +200,6 @@ ul.description {
 ul.description li {
   line-height: 1.8em;
   font-size: 1.2em;
-  text-shadow: 0 1px 1px #FFF;
   color: #444;
 }
 
