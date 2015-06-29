@@ -167,15 +167,14 @@ h4 {
   color: #444;
 }
 
-/*/* Tablet */
+/* Tablet */
 
 /* Wide mobile layout */
 
-@media only screen and (max-device-width: 767px) {
+@media only screen and (max-width: 767px) {
 
   body {
     padding: 20px;
-    font-size: 150%;
   }
 
   section {
@@ -194,13 +193,12 @@ h4 {
 
 /* Portrait mobile layout */
 
-@media only screen and (max-device-width: 640px) {
+@media only screen and (max-width: 640px) {
 
   body {
     padding: 10px;
-    font-size: 200%;
   }
-
+  
   section {
     width: 100%;
   }
@@ -214,4 +212,4 @@ h4 {
   #about h1 {
     clear: both;
   }
-}*/
+}
