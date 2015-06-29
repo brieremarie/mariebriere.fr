@@ -202,14 +202,4 @@ h4 {
   section {
     width: 100%;
   }
-
-  #about img {
-    float: left;
-    align: center;
-    margin: auto 20px;
-  }
-
-  #about h1 {
-    clear: both;
-  }
 }
