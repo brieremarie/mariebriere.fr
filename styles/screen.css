@@ -172,7 +172,7 @@ h4 {
 
 /* Wide mobile layout */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-device-width: 767px) {
 
   body {
     padding: 20px;
@@ -194,7 +194,7 @@ h4 {
 
 /* Portrait mobile layout */
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-device-width: 620px) {
 
   body {
     padding: 10px;
