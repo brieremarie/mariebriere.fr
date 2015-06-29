@@ -34,18 +34,15 @@ px      68    160    252    344    436    528    620    712    804    896
 */
 
 body {
-  margin: 0;
   padding: 50px;
-  background: #f7f7fa;
-  font-size: .875em;
+	color: #333;
+ 	background: #f7f7fa;
+  font-size: 14px;
   font-family: HelveticaNeue, arial, sans-serif;
-  line-height: 1.5em;
-  text-align: center;
-  color: #333;
-  text-shadow: 0 1px 0 #fff;
  	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
-}		
+  text-shadow: 0 1px 0 #fff;
+}
 
 strong {
   font-weight: bold;
@@ -55,109 +52,96 @@ em {
   font-style: italic;
 }
 
-.contents {
-  margin: 0 auto;
-  width: 880px;
-  text-align: left;
-  padding: 0 0;
-}
-
-#frame .contents {	
-  position: relative;
-  margin: 3em auto;
-}
-
-#main {
-  width: 560px;
-  padding: 0 0 4em;
-  margin: 0 auto;
-}
-
-#side {
-  position: absolute;
-  width: 175px;
-}
-
-body.index #side {display: none;}
-.left {float: left; margin-right: 1.5em;}
-
 p {
   margin: 0 0 1.5em; 
   color: #333;
-  font-size: 1.1em;
 }
 
-p.intro {
-  font-style: italic; 
+a {
+  color: #2382c8;
+	text-decoration: none;
+}
+
+a:hover {
+  color: #2382c8;
+  text-decoration: underline;
+}
+
+header h1 a {
+  color: #333;
+}
+
+header h1 a:hover{
+  color: #333;
+  text-decoration: none;
+}
+
+.vcard
+{
   color: #555;
+  line-height: 1.5em;
 }
 
-pre {
-  font-family: Monaco, monospace
-  font-size: 10px !important;
-  background-color: #121212;
-  padding: 10px;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
-  line-height: 18px;
-  color: #AAA;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+/* About */
 
-}
-
-code {
-  font-family: Monaco, monospace
-  font-size: 10px !important;
-  background-color: #121212;
-  color: #AAA;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  padding: 0 3px;
-}
-
-hr {
-  border: 1px solid #DDD;
+section {
+  margin: 40px auto;
+	width: 600px;
+  border-bottom: 2px solid #DDD;
+  padding-bottom: 30px;
   margin-top: 30px;
-  margin-bottom: 10px;
-  clear: both;
 }
 
-h1, h2, h3 {font-family: HelveticaNeue, arial, sans-serif;}
-
-#frame h1 {
-  padding: 0;
-  margin-top: 0;
-}
-
-h1 {
+#about h1 {
   font-size: 4em; 
   line-height: 2em; 
   padding: 0; 
   margin: 0.7142em 0 0.3357em;
   color: #444;	
+	text-shadow: 1px 1px 1px #FFF;	
 }
 
-img.header_image {
-  position: absolute;
-  top: 30px;
-  right: 80px;
-  border: 6px solid #FFF;
-}
-
-#frame h1 a {
+#about h1 a {
   color: #444;
   text-decoration: none;
   font-weight: 700;
 }
 
-#frame h1 a:hover {
+#about h1 a:hover {
   color: #222;
   background-color: transparent;
   text-decoration: none;
 }
+
+#about img {
+  width: 150px;
+  float: right;
+  border: 6px solid #FFF;
+  margin-top: 30px;
+}
+
+#about ul li {
+  line-height: 1.8em;
+  font-size: 1.2em;
+  color: #444;
+}
+
+/* Other sections */
+
+#contact p, #background p, #research p, #teaching p, #publications p {
+  margin-bottom: 20px;
+	font-size: 110%;
+	font-weight: 300;
+	line-height: 1.5; 
+}
+
+#contact ul li, #background ul li, #research ul li, #teaching ul li, #publications ul li {
+  line-height: 1.8em;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Headings */
 
 h2 {
   color: #444;
@@ -184,63 +168,49 @@ h4 {
   color: #444;
 }
 
-#frame a {
-  color: #2D76B9;
-  text-decoration: none;
-  padding: 2px 3px;
+/* Tablet */
+
+/* Wide mobile layout */
+
+@media only screen and (max-width: 767px) {
+
+  body {
+    padding: 20px;
+  }
+
+  section {
+    margin-top: 0;
+  }
+  
+  #about h1 {
+    margin: 0;
+  }
+  
+  section h1 a {
+    margin-bottom: 20px;
+    font-size: 70%;
+  }
 }
 
-#frame a:hover {
-  text-decoration: underline;
+/* Portrait mobile layout */
+
+@media only screen and (max-width: 620px) {
+
+  body {
+    padding: 10px;
+	}
+  
+  section {
+    width: 100%;
+  }
+
+	#about img {
+	  float: left;
+    align: center;
+    margin: auto 20px;
+	}	
+  
+  #about h1 {
+    clear: both;
+  }
 }
-
-#frame a.logo {background: none; text-decoration: none; border: none; float: right; position:relative; bottom: -50px;}
-
-#frame h3 a {
-  color: #7ACEFF; 
-}
-
-#frame h3 a:hover {
-  background: #7ACEFF;
-  color: #000;
-}
-
-.vcard {
-  color: #555;
-}
-
-dl dt {
-  color: #555;
-  font-weight: bold;
-  width: 90px;
-}
-
-dl dd {
-  color: #444;
-  margin-left: 110px;
-}
-
-dd + dd {
-  clear: left;
-}
-
-ul li {
-  color: #444;
-  padding-bottom: 5px;
-}
-
-ul.description {
-  list-style: none;
-  width: 500px;
-}
-
-ul.description li {
-  line-height: 1.8em;
-  font-size: 1.2em;
-  color: #444;
-}
-
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }		 
-.clearfix { display: inline-block; }		 
-* html .clearfix { height: 1%; }		 
-.clearfix{ display: block; }
