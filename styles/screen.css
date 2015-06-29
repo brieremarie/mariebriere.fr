@@ -183,12 +183,31 @@ h4 {
 
   #about h1 {
     margin: 0;
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+  
+  h3 {
+    font-size: 30px;
   }
 
   section h1 a {
     margin-bottom: 20px;
     font-size: 70%;
   }
+  
+  ul li {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  
 }
 
 /* Portrait mobile layout */
