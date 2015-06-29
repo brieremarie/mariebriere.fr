@@ -1,6 +1,41 @@
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+ul {list-style: none;}
+
+/* Default layout */
+
+/* 				 Default Layout: 992px. 
+					 Gutters: 24px.
+					 Outer margins: 48px.
+					 Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896
+*/
+
 body {
   margin: 0;
-  padding: 0;
+  padding: 50px;
   background: #f7f7fa;
   font-size: .875em;
   font-family: HelveticaNeue, arial, sans-serif;
@@ -8,6 +43,8 @@ body {
   text-align: center;
   color: #333;
   text-shadow: 0 1px 0 #fff;
+ 	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }		
 
 strong {
@@ -105,7 +142,7 @@ h1 {
 
 img.header_image {
   position: absolute;
-  top: 10px;
+  top: 30px;
   right: 80px;
   border: 6px solid #FFF;
 }
