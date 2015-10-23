@@ -166,3 +166,12 @@ h4 {
   border-bottom: 2px solid #AAA;
   color: #444;
 }
+
+ul.publications {
+  list-style-type: disc;
+  padding-bottom: 5px;
+}
+
+ul.publications li {
+  margin-left: 20px;
+}
