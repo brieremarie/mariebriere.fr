@@ -34,7 +34,7 @@ px      68    160    252    344    436    528    620    712    804    896
 */
 
 body {
-  padding: 50px;
+  padding: 20px;
 	color: #333;
  	background: #f7f7fa;
   font-size: 14px;
@@ -85,10 +85,7 @@ header h1 a:hover{
 
 section {
   margin: 40px auto;
-	width: 600px;
-  border-bottom: 2px solid #DDD;
-  padding-bottom: 30px;
-  margin-top: 30px;
+	width: 620px;
 }
 
 #about h1 {
@@ -174,4 +171,77 @@ ul.publications {
 
 ul.publications li {
   margin-left: 20px;
+}
+
+section#tabs, section#about
+{
+  border-bottom: none;
+}
+
+section#tabs{
+  margin: 0 auto;
+}
+
+section#tabs ul
+{
+  padding-left:9px;
+  position:relative;
+  width:auto;
+  border-bottom:1px solid #E5E5E5;
+  clear:both;
+  height:30px;
+  width:auto;
+}
+
+section#tabs li
+{
+  display:inline;
+  line-height:1;
+}
+
+section#tabs li a
+{
+  border-bottom-left-radius:0 0;
+  border-bottom-right-radius:0 0;
+  border-top-left-radius:4px 4px;
+  border-top-right-radius:4px 4px;
+  display:inline;
+  float:left;
+  line-height:23px;
+  margin:0;
+  overflow:hidden;
+  padding:4px 10px 3px;
+  text-shadow:#FFF 0 1px 0;
+  width:auto;
+/*  font-size: 13px;*/
+}
+
+section#tabs li a:hover
+{
+  background:#ddd;
+  text-decoration:none;
+}
+
+section#tabs li.active
+{
+  padding-bottom:3px;
+}
+
+section#tabs li.last
+{
+  float: right;
+}
+
+section#tabs li.active a
+{
+  background:#FFF;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  border-bottom: 1px solid #f7f7fa;
+  border-top:1px solid #E5E5E5;
+  border-left:1px solid #E5E5E5;
+  border-right:1px solid #E5E5E5;
+  color:#333;
+  font-weight:600;
+  padding-top:3px;
 }
