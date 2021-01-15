@@ -56,6 +56,11 @@ p {
   color: #333;
 }
 
+p.abstract {
+  font-size: 13px;
+  color: #444;
+}
+
 a {
   color: #2382c8;
 	text-decoration: none;
@@ -160,8 +165,7 @@ h4 {
   font-size: 16px;
   margin: 1.5em 0 1.5em;
   padding-top: 0.5em;
-  border-bottom: 2px solid #AAA;
-  color: #444;
+  color: #333;
 }
 
 ul.publications {
